@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Shafaq Electronics — smartphones, laptops and accessories.">
+<title>Shafaq Electronics | Tech for everyday</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="announcement" data-i18n="announcement">UAE delivery options · Secure shopping experience · Customer support</div>
+<header class="header">
+  <a class="logo" href="index.html" aria-label="Shafaq home">SHAFAQ<span>•</span></a>
+  <form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="Search phones, laptops and accessories…" aria-label="Search products"><button data-i18n="search">Search</button></form>
+  <div class="header-actions"><button id="langToggle" class="ghost" type="button">العربية</button><button id="cartOpen" class="cart-button" type="button">🛒 <span data-i18n="cart">Cart</span> <b id="cartCount">0</b></button></div>
+</header>
+<nav class="nav"><a href="#home" data-i18n="home">Home</a><a href="#categories" data-i18n="categories">Categories</a><a href="#products" data-i18n="allProducts">All products</a><a href="#support" data-i18n="support">Customer care</a></nav>
+<main>
+<section class="hero" id="home"><div class="hero-copy"><span class="eyebrow" data-i18n="eyebrow">TECH THAT MOVES YOU</span><h1 data-i18n="heroTitle">Upgrade your everyday.</h1><p data-i18n="heroText">Discover smartphones, smart devices and accessories chosen for your life.</p><a class="primary" href="#products" data-i18n="shopNow">Shop products ↗</a></div><div class="hero-visual"><div class="orb"></div><div class="phone-art"><div class="camera"></div><div class="screen-glow"></div></div><div class="floating-chip">NEW<br><b>TECH</b></div></div></section>
+<section class="benefits"><div><i>🚚</i><span><b data-i18n="delivery">Delivery options</b><small data-i18n="deliveryText">Details shown at checkout</small></span></div><div><i>✓</i><span><b data-i18n="quality">Quality picks</b><small data-i18n="qualityText">Product details clearly listed</small></span></div><div><i>♧</i><span><b data-i18n="checkout">Easy shopping</b><small data-i18n="checkoutText">Review your cart anytime</small></span></div><div><i>☏</i><span><b data-i18n="help">Customer care</b><small data-i18n="helpText">Contact details coming soon</small></span></div></section>
+<section class="section" id="categories"><div class="section-heading"><div><span class="eyebrow blue" data-i18n="browse">BROWSE COLLECTIONS</span><h2 data-i18n="shopByCategory">Shop by category</h2></div><p data-i18n="categorySub">Find the right tech for your lifestyle.</p></div><div class="category-grid">
+<button class="category active" data-category="all"><span>✦</span><b data-i18n="all">All items</b></button><button class="category" data-category="phones"><span>📱</span><b data-i18n="phones">Smartphones</b></button><button class="category" data-category="laptops"><span>💻</span><b data-i18n="laptops">Laptops</b></button><button class="category" data-category="audio"><span>🎧</span><b data-i18n="audio">Audio</b></button><button class="category" data-category="wearables"><span>⌚</span><b data-i18n="wearables">Wearables</b></button><button class="category" data-category="accessories"><span>🔌</span><b data-i18n="accessories">Accessories</b></button>
+</div></section>
+<section class="section" id="products"><div class="section-heading"><div><span class="eyebrow blue" data-i18n="curated">CURATED FOR YOU</span><h2 data-i18n="featured">Featured products</h2></div><span class="results" id="resultsCount"></span></div><div class="product-grid" id="productGrid"></div></section>
+<section class="promo"><div><span class="eyebrow" data-i18n="discover">DISCOVER MORE</span><h2 data-i18n="promoTitle">Good tech. Better everyday.</h2><p data-i18n="promoText">Explore the collection and find your next favourite device.</p></div><a href="#products" class="light-button" data-i18n="explore">Explore collection →</a></section>
+<section class="notice"><b data-i18n="demoTitle">Store preview</b><p data-i18n="demoText">This GitHub Pages version is a front-end demo. Cart contents are saved in your browser; no order is sent, no payment is processed, and prices/products are sample data.</p></section>
+</main>
+<footer id="support"><div class="footer-main"><div><a class="logo light-logo" href="#">SHAFAQ<span>•</span></a><p data-i18n="footerText">Your destination for everyday technology.</p></div><div><b data-i18n="quickLinks">Quick links</b><a href="#products" data-i18n="allProducts">All products</a><a href="#categories" data-i18n="categories">Categories</a></div><div><b data-i18n="customerCare">Customer care</b><a href="#support" data-i18n="shipping">Shipping & returns</a><a href="#support" data-i18n="contact">Contact us</a></div><div><b data-i18n="newsletter">Stay in the loop</b><p data-i18n="footerNote">Add your official contact details before launch.</p></div></div><div class="copyright">© <span id="year"></span> SHAFAQ Electronics. <span data-i18n="rights">All rights reserved.</span></div></footer>
+<div class="overlay" id="overlay"></div><aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true"><div class="drawer-head"><h2 data-i18n="yourCart">Your cart</h2><button id="cartClose" class="icon-button" aria-label="Close cart">✕</button></div><div id="cartItems" class="cart-items"></div><div class="cart-bottom"><div class="subtotal"><span data-i18n="subtotal">Subtotal</span><b id="cartSubtotal">AED 0</b></div><p data-i18n="cartNotice">Demo only — checkout is not connected.</p><button id="checkoutBtn" class="primary full" data-i18n="checkoutButton">Continue to checkout</button></div></aside>
+<div class="modal" id="productModal" aria-hidden="true"><button class="modal-close" id="modalClose">✕</button><div id="modalContent"></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
